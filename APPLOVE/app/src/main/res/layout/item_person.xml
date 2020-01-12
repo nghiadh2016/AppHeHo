@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:src="@drawable/ic_son"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="80dp"
+        android:layout_height="160dp">
+    </ImageView>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:orientation="vertical"
+        android:weightSum="4">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Trường Sơn"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Id: "
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/messageUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Message"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="-10dp">
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:text="Chấp nhận"
+                android:layout_marginRight="15dp"
+                android:background="#80ffd4"
+                android:id="@+id/btnAccpent">
+
+            </Button>
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:text="Từ chối"
+                android:background="#d9d9d9"
+                android:id="@+id/btnDenife">
+
+            </Button>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

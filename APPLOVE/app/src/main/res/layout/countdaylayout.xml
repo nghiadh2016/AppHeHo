@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountDay"
+    android:background="@drawable/background"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#F500AF"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Count days!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/imgAvatarmale"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/avatar"/>
+
+            <TextView
+                android:id="@+id/tvNameMale"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:text="Tên: "
+                android:textSize="25sp"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:id="@+id/tvAgeMale"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:text="Ngày sinh: "
+                android:textSize="25sp"
+                android:textColor="@color/colorText"/>
+
+
+
+            <TextView
+                android:id="@+id/tvGenderMale"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:text="Giới tính: "
+                android:textSize="25sp"
+                android:textColor="@color/colorText"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/imgAvatarfemale"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/avatar2"/>
+
+            <TextView
+                android:id="@+id/tvNamefemale"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:text="Tên: "
+                android:textSize="25sp"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:id="@+id/tvAgeFemale"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:text="Ngày sinh: "
+                android:textSize="25sp"
+                android:textColor="@color/colorText"/>
+
+
+
+            <TextView
+                android:id="@+id/tvGenderFemale"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:text="Giới tính: "
+                android:textSize="25sp"
+                android:textColor="@color/colorText"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FC3F08 "
+            android:id="@+id/tvCountdown"
+            android:gravity="center"
+            android:text="text"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back Home"
+            android:textSize="25dp"
+            android:id="@+id/tvBack"/>
+    </LinearLayout>
+</LinearLayout>
